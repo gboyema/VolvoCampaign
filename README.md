@@ -31,33 +31,7 @@
 
 ## About the Project
 
-Playwright Demo - This project is based on Microsoft Playwright which enables reliable end-to-end testing for modern web apps.
-
-Top Features:
-
-- Easy to Configure.
-- Auto-waits for all the relevant checks to pass and only then performs the requested action.
-- Records videos for Test Cases.
-- Records the test script and every action on the target page is turned into generated script.
-- Generates trace file, which gives in-depth details of Test Case execution.
-- Execution of test case is faster when compared with other competitive framework in market.
-- Supports Headful/Headless mode execution for Firefox/Webkit/Google Chrome/Chromium/MS Edge on Windows/Linux/Mac machines.
-- It supports API testing (From Playwright version 1.16 onwards)
-- It can be used to simulate browser behaviour on mobile devices, and supports over 100+ devices.
-- It has ability to produce and visually compare screenshots.
-- To slow down execution slowMo option is available.
-- Supports 'download' event monitoring, so there is no need for user to actually wait for downloads to finish.
-- Supports Serial and Parallel execution.
-- Allure/HTML Reports are generated after execution with an option to capture screenshot/video/trace file on failure.
-- Nonetheless Support from Microsoft so FREQUENT RELEASES and turn arounf time for any queries is 48 hours.
-
-Bonus:
-
-- Supports PostgresSQL using 'pg' module.
-- Supports Excel File Read/Write using 'excel-js' module.
-- Converts HTML Reports to Zip format which can shared across.
-- Extracts Text from PDF files.
-- Shows Page performance using Lighthouse Library.
+Playwright Volvo - This project is based on volvo safety campaign.
 
 ### Built With
 
@@ -129,8 +103,6 @@ npm run test:single
 npm run test:parallel
 ```
 
-
-
 ## Reports
 
 - <b>Overall Report</b>
@@ -149,13 +121,13 @@ npm run test:parallel
 - For building image from Docker run below command, where path to Dockerfile must be provided after -f tag and name of the image must be provided after -t tag.
 
 ```JS
-docker build . -f Dockerfile -t playtest
+docker build . -f Dockerfile -t volvo
 ```
 
 - Once the image is generated we can run the image to spawn container and run scrips using below command. In Below Command "playContainer" is name of the container created using "playtest" image.
 
 ```JS
-docker run --name playContainer playtest
+docker run --name playContainer volvo
 ```
 
 - If you want to run a different test or provide custom command, Go to Dockerfile and edit the last line which is CMD section. The below sample runs test cases serially on QA environment.

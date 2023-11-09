@@ -130,33 +130,6 @@ const config: PlaywrightTestConfig = {
           slowMo: 0
         }
       },
-    },
-    {
-      name: `Device`,
-      use: {
-        ...devices[`Pixel 4a (5G)`],
-        browserName: `chromium`,
-        channel: `chrome`,
-        baseURL: testConfig[ENV],
-        headless: true,
-        ignoreHTTPSErrors: true,
-        acceptDownloads: true,
-        screenshot: `only-on-failure`,
-        video: `retain-on-failure`,
-        trace: `retain-on-failure`,
-        launchOptions: {
-          slowMo: 0
-        }
-      },
-    },
-    {
-      name: `DB`
-    },
-    {
-      name: `API`,
-      use: {
-        baseURL: testConfig[ENV]
-      }
     }
   ],
 };

@@ -6,8 +6,10 @@ COPY package.json package-lock.json ./
 
 RUN npm ci
 
+RUN npm install
+
 #Install chrome on Docker container
-RUN npx playwright install chrome
+RUN npx playwright install
 
 COPY . .
 
@@ -20,4 +22,6 @@ RUN chown -R turing /app
 #Switching from root user to non-root user(turing)
 USER turing
 
-CMD npm run test:serial --ENV="qa"
+ENV npm_config_ENV=qa
+
+CMD npm run test:parallel --ENV="qa"
